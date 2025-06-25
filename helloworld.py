@@ -1,1 +1,1 @@
-print("amith")
+print("Hello world !")
