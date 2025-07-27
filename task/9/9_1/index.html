@@ -1,0 +1,31 @@
+<!-- Task 9.1: JavaScript Basics
+
+✔ Create an HTML file and add JavaScript in the following ways:
+
+Inline: Directly inside an element (e.g., onclick)
+Internal: Inside <script> tag
+External: Link to a .js file
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button onclick="alert('inline')">inline</button>
+    <button  onclick="one()">internal</button>
+    <button onclick="two()">external</button>
+    <script>
+function one(){
+    alert("internal")
+}
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
