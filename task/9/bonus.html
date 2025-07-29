@@ -1,0 +1,50 @@
+<!-- Bonus Challenge – Simple Calculator
+
+✔ Build a simple calculator that:
+Takes two numbers
+Allows the user to select an operation (+, -, *, /)
+Displays the result on the page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container"><div class="content">
+        <input type="number" name="" id="num1">
+        <input type="number" name="" id="num2">
+        <select id="operator">
+            <option value="+" name="ope">+</option><option value="-"name="ope">-</option>
+            <option value="x"name="ope">x</option>
+            <option value="/"name="ope">/</option>
+        </select>
+        <button onclick="calculate()">calculate</button>
+        <h3 id="result"></h3>
+    </div></div>
+    <script>
+function calculate(){
+    const a=parseFloat(document.getElementById('num1').value)
+    const b=parseFloat(document.getElementById('num2').value)
+    const c=document.getElementById('operator').value
+    let result
+    if(isNaN(a)||isNaN(b)){
+        result="please enter a valid number"
+    }else{
+        switch(c){
+            case '+':result=a+b
+             break
+             case '-':result=a-b
+             break
+             case 'x':result=a*b
+             break
+             case '/':result=a/b
+             break
+        }
+    }document.getElementById('result').textContent=`result ${result}`
+
+}
+    </script>
+</body>
+</html>
