@@ -1,3 +1,9 @@
+// Task 9.2: Variables, Data Types & Operators
+
+// ✔ Declare variables using let, const
+// ✔ Work with different data types: Number, String, Boolean, Array, Object
+// ✔ Use arithmetic, logical, and comparison operators
+
 let a=5
 const b=5
 console.log(a,b)
